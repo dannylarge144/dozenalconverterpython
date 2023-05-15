@@ -8,23 +8,15 @@ while True:
         except ValueError:
             print("Something went wrong.")
             boolbreak = False
+        if abs(intDec) > 12**9:
+            print("Too large.")
+            boolbreak = False    
         if boolbreak:
             break    
     boolNeg = False
     if intDec < 0:
         boolNeg = True
         intDec = abs(intDec)
-    while intDec > 12**9:
-        print("Too large.")
-        while True:
-            try:
-                intDec = int(input("Please enter an interger in decimal:"))
-                boolbreak = True
-            except ValueError:
-                print("Something went wrong.")
-                boolbreak = False
-            if boolbreak:
-                break
     strdoz = ""
     if boolNeg:
         strdoz += "-"
