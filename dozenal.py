@@ -8,7 +8,7 @@ while True:
         except ValueError:
             print("Something went wrong.")
             boolbreak = False
-        if abs(intDec) > 12**9:
+        if abs(intDec) >= 12**10:
             print("Too large.")
             boolbreak = False    
         if boolbreak:
