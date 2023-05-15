@@ -1,11 +1,11 @@
 import math
 intDec=int(input("Please enter a decimal number:"))
 boolNeg=False
+while abs(intDec)>=5159780352:
+	intDec=int(input("Too large. Enter another"))
 if intDec<0:
 	boolNeg=True
 	intDec=abs(intDec)
-while intDec>=5159780352:
-	intDec=int(input("Too large. Enter another"))
 intNine=intDec/12**9
 if intNine>=1:
 	intNn=(math.floor(intNine))
