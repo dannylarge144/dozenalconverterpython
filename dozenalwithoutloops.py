@@ -1,3 +1,5 @@
+#This is awful practice on purpose. The same repository has a more elegant solution. Do not take this seriously.
+
 import math
 intDec=int(input("Please enter a decimal number:"))
 boolNeg=False
